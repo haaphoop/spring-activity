@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template>
+
+	<autoInsuranceBookings>
+		<sms>
+			<content>【国恒保险代理】预约保险记录</content>
+		</sms>
+		<website>
+			<title>预约保险记录</title>
+			<content>
+				预约保险记录：称：${productName},用户昵称：${nickName},真实姓名：${name},手机号码：${mobile},预约状态：${status},点击处理：
+				<a href="${url}">${url}</a>
+				预约保险记录已发送您的邮箱，请查收！
+			</content>
+		</website>
+	</autoInsuranceBookings>
+
+	<!-- 新增-保单相关消息模板 -->
+	<newOrder>
+		<sms>
+			<content>【如来保】您有新的保单产生，产品名称：“${productName}”，请登录如来保进行查看。</content>
+		</sms>
+		<website>
+			<title>${productName}</title>
+			<content>新的保单！</content>
+		</website>
+	</newOrder>
+	<!-- 已承保-保单相关消息模板 -->
+	<payedOrder>
+		<sms>
+			<content>【如来保】您的“${productName}”保单已承保，请登录如来保进行查看。</content>
+		</sms>
+		<website>
+			<title>${productName}</title>
+			<content>保单状态更改为已承保！</content>
+		</website>
+	</payedOrder>
+	<!-- 问题保单-保单相关消息模板 -->
+	<rejectedOrder>
+		<sms>
+			<content>【如来保】您的“${productName}”保单存在问题未成保，请登录如来保进行查看。</content>
+		</sms>
+		<website>
+			<title>${productName}</title>
+			<content>该保单存在问题！</content>
+		</website>
+	</rejectedOrder>
+	<!-- 回执签收-保单相关消息模板 -->
+	<receiptSignedOrder>
+		<sms>
+			<content>【如来保】您的“${productName}”保单已回执签收，请登录如来保进行查看。</content>
+		</sms>
+		<website>
+			<title>${productName}</title>
+			<content>保单状态更改为回执签收！</content>
+		</website>
+	</receiptSignedOrder>
+	<!-- 续保中-保单相关消息模板 -->
+	<renewing>
+		<website>
+			<title>${productName}</title>
+			<content>保单续保中！</content>
+		</website>
+	</renewing>
+	<!-- 续保成功-保单相关消息模板 -->
+	<renewOrder>
+		<sms>
+			<content>【如来保】您的“${productName}”保单续保成功，请登录如来保进行查看。</content>
+		</sms>
+		<website>
+			<title>${productName}</title>
+			<content>保单续保成功！</content>
+		</website>
+	</renewOrder>
+
+	<!-- 佣金结算后，佣金收益 -->
+	<commission>
+		<sms>
+			<content>【如来保】恭喜，您的保单编号为“${orderCode}”的保单已成功结算并获得“${cashNum}”元收益，请登录如来保进行查看。
+			</content>
+		</sms>
+		<website>
+			<title>佣金收益</title>
+			<content>+${cashNum}</content>
+		</website>
+	</commission>
+
+	<!-- 用户提交认证成功 -->
+	<userCheckSuccess>
+		<sms>
+			<content>【如来保】您的销售认证信息已通过平台审核，认证成功。</content>
+		</sms>
+		<website>
+			<title>认证成功</title>
+			<content>销售认证成功！</content>
+		</website>
+	</userCheckSuccess>
+	<!-- 用户提交认证失败 -->
+	<userCheckFail>
+		<sms>
+			<content>【如来保】您的销售认证信息未通过平台审核，认证失败。</content>
+		</sms>
+		<website>
+			<title>认证失败</title>
+			<content>销售认证失败！</content>
+		</website>
+	</userCheckFail>
+</template>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+       <setting name="logImpl" value="LOG4J"/>
+    </settings>
+	<typeAliases>
+		<typeAlias alias="loginLog" type="com.itech.ups.app.system.monitor.application.domain.LoginLog" />
+        <typeAlias alias="businessLog" type="com.itech.ups.app.system.monitor.application.domain.BusinessLog" />
+	    <typeAlias alias="function" type="com.itech.ups.app.system.authority.application.domain.Function" />
+	    <typeAlias alias="role" type="com.itech.ups.app.system.authority.application.domain.Role"/>
+	    <typeAlias alias="roleFunction" type="com.itech.ups.app.system.authority.application.domain.RoleFunction"/>
+	    <typeAlias alias="function" type="com.itech.ups.app.system.authority.application.domain.Function" />
+	    <typeAlias alias="manager" type="com.itech.ups.app.system.manager.application.domain.Manager"/>
+        <typeAlias alias="managerRole" type="com.itech.ups.app.system.manager.application.domain.ManagerRole"/>
+        
+        <typeAlias alias="userMessage" type="com.itech.ups.app.business.user.application.domain.UserMessage" />
+        <typeAlias alias="userMessageSet" type="com.itech.ups.app.business.user.application.domain.UserMessageSet" />
+        <typeAlias alias="user" type="com.itech.ups.app.business.user.application.domain.User" />
+        <typeAlias alias="advertise" type="com.itech.ups.app.business.website.advertise.application.domain.Advertise" />
+        <typeAlias alias="bulletin" type="com.itech.ups.app.business.website.bulletin.application.domain.Bulletin" />
+        
+	    <typeAlias alias="websitelink" type="com.itech.ups.app.business.website.link.application.domain.Link" />
+	    <typeAlias alias="websitenews" type="com.itech.ups.app.business.website.news.application.domain.News" />
+	    <typeAlias alias="problem" type="com.itech.ups.app.business.website.problem.application.domain.Problem" />
+        <typeAlias alias="problemCategory" type="com.itech.ups.app.business.website.problem.application.domain.ProblemCategory" />
+        <typeAlias alias="problemReply" type="com.itech.ups.app.business.website.problem.application.domain.ProblemReply" />
+	    
+	    <typeAlias alias="insuranceBooking" type="com.itech.ups.app.business.insurance.application.domain.InsuranceBooking" />
+	    <typeAlias alias="insuranceSalesDetail" type="com.itech.ups.app.business.insurance.application.domain.InsuranceSalesDetail" />
+	    <typeAlias alias="insuranceSalesRecord" type="com.itech.ups.app.business.insurance.application.domain.InsuranceSalesRecord" />
+	    <typeAlias alias="productInsurance" type="com.itech.ups.app.business.insurance.application.domain.ProductInsurance" />
+	    <typeAlias alias="productOtherAttachFile" type="com.itech.ups.app.business.product.application.domain.ProductOtherAttachFile" />
+	    <typeAlias alias="userRecommendRelation" type="com.itech.ups.app.business.user.application.domain.UserRecommendRelation" />
+	    <typeAlias alias="userRecommendRelation" type="com.itech.ups.app.business.user.application.domain.UserRecommendRelation" />
+        <typeAlias alias="appInsuranceCompany" type="com.itech.ups.app.business.rulaibao.product.application.domain.AppInsuranceCompany"/>
+        <typeAlias alias="appCollection" type="com.itech.ups.app.business.rulaibao.product.application.domain.AppCollection"/>
+        <typeAlias alias="appProduct" type="com.itech.ups.app.business.rulaibao.product.application.domain.AppProduct"/>
+        <typeAlias alias="appointmentProduct" type="com.itech.ups.app.business.rulaibao.appointmentproduct.application.domain.AppointmentProduct"/>
+        <typeAlias alias="appCourse" type="com.itech.ups.app.business.rulaibao.course.application.domain.AppCourse"/>
+        <typeAlias alias="appCourseRecommend" type="com.itech.ups.app.business.rulaibao.course.application.domain.AppCourseRecommend"/>
+        <typeAlias alias="appFieldType" type="com.itech.ups.app.business.rulaibao.course.application.domain.AppFieldType"/>
+        <typeAlias alias="apprecommendrelation" type="com.itech.ups.app.business.rulaibao.userinfo.application.domain.AppRecommendRelation"/>
+        <typeAlias alias="appuserinfo" type="com.itech.ups.app.business.rulaibao.userinfo.application.domain.AppuserInfo"/>
+        
+        <typeAlias alias="apporder" type="com.itech.ups.app.business.rulaibao.order.application.domain.AppOrder" />
+        <typeAlias alias="apptraderecord" type="com.itech.ups.app.business.rulaibao.traderecord.application.domain.AppTradeRecord" />
+        <typeAlias alias="appCircle" type="com.itech.ups.app.business.rulaibao.appCircle.application.domain.AppCircle" />
+        <typeAlias alias="appCircleMember" type="com.itech.ups.app.business.rulaibao.appCircle.application.domain.AppCircleMember" />
+        <typeAlias alias="appComment" type="com.itech.ups.app.business.rulaibao.appCircle.application.domain.AppComment" />
+        <typeAlias alias="appTopic" type="com.itech.ups.app.business.rulaibao.appCircle.application.domain.AppTopic" />
+        <typeAlias alias="appAnswer" type="com.itech.ups.app.business.rulaibao.appQuestion.application.domain.AppAnswer" />
+        <typeAlias alias="appQuestion" type="com.itech.ups.app.business.rulaibao.appQuestion.application.domain.AppQuestion" />
+                        
+        <typeAlias alias="appAdvertise" type="com.itech.ups.app.business.rulaibao.advertise.application.domain.AppAdvertise" />
+        <typeAlias alias="appBulletin" type="com.itech.ups.app.business.rulaibao.bulletin.application.domain.AppBulletin" />
+        <typeAlias alias="versionManage" type="com.itech.ups.app.business.rulaibao.versionManager.application.domain.VersionManage" />
+        <typeAlias alias="appPushManage" type="com.itech.ups.app.business.rulaibao.push.application.domain.AppPushManage" />
+        <typeAlias alias="appFeedback" type="com.itech.ups.app.business.rulaibao.problemfeedback.application.domain.AppFeedback" />
+	    
+	    <typeAlias alias="appBusinessLog" type="com.itech.ups.app.business.rulaibao.businesslog.application.domain.AppBusinessLog" />
+	    <typeAlias alias="appUserMessage" type="com.itech.ups.app.business.rulaibao.message.application.domain.AppUserMessage" />
+	</typeAliases>
+	<plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--指明数据库 4.0.0以后不需要设置此属性-->
+            <!-- <property name="dialect" value="com.github.pagehelper.dialect.helper.MySqlDialect"/> -->
+            <!-- 该参数默认为false -->
+            <!-- 设置为true时，会将RowBounds第一个参数offset当成pageNum页码使用 -->
+            <!-- 和startPage中的pageNum效果一样-->
+            <property name="offsetAsPageNum" value="true"/>
+            <!-- 该参数默认为false -->
+            <!-- 设置为true时，使用RowBounds分页会进行count查询 -->
+            <property name="rowBoundsWithCount" value="true"/>
+            <!-- 设置为true时，如果pageSize=0或者RowBounds.limit = 0就会查询出全部的结果 -->
+            <!-- （相当于没有执行分页查询，但是返回结果仍然是Page类型）-->
+            <property name="pageSizeZero" value="true"/>
+            <!-- 3.3.0版本可用 - 分页参数合理化，默认false禁用 -->
+            <!-- 启用合理化时，如果pageNum<1会查询第一页，如果pageNum>pages会查询最后一页 -->
+            <!-- 禁用合理化时，如果pageNum<1或pageNum>pages会返回空数据 -->
+            <property name="reasonable" value="true"/>
+            <!-- 3.5.0版本可用 - 为了支持startPage(Object params)方法 -->
+            <!-- 增加了一个`params`参数来配置参数映射，用于从Map或ServletRequest中取值 -->
+            <!-- 可以配置pageNum,pageSize,count,pageSizeZero,reasonable,orderBy,不配置映射的用默认值 -->
+            <!-- 不理解该含义的前提下，不要随便复制该配置 -->
+            <property name="params" value="pageNum=start;pageSize=limit;"/>
+            <!-- 支持通过Mapper接口参数来传递分页参数 -->
+            <property name="supportMethodsArguments" value="true"/>
+            <!-- always总是返回PageInfo类型,check检查返回类型是否为PageInfo,none返回Page -->
+            <property name="returnPageInfo" value="check"/>
+        </plugin>
+    </plugins>   
+</configuration>
